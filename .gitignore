@@ -1,0 +1,19 @@
+.venv/
+datasets/
+results/
+mlruns/
+mlflow.db
+artifacts/
+__pycache__/
+*.pyc
+.env
+*.ckpt
+*.onnx
+*.pt
+.pytest_cache/
+models/
+.venv-monitor/
+reports/*.html
+
+# Private working notes, kept off the public repo
+PLAN.md

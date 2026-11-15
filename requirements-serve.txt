@@ -1,0 +1,7 @@
+# Everything the running service needs. No PyTorch: the model is ONNX.
+fastapi==0.163.0
+uvicorn==0.54.0
+python-multipart==0.0.33
+onnxruntime==1.32.0
+numpy==2.4.6
+pillow==13.0.0

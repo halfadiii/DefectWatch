@@ -1,0 +1,8 @@
+# Start from nothing and allow in only what the image needs.
+*
+!requirements-serve.txt
+!serving/__init__.py
+!serving/app.py
+!serving/inference.py
+!serving/preprocess.py
+!models/

@@ -1,0 +1,9 @@
+# Training and scoring (step 1). The serving image gets its own, much smaller list.
+# Install torch first, from the CUDA index, so pip does not pull the CPU build:
+#   pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
+anomalib==2.7.0
+mlflow==3.18.0
+onnx==1.23.2
+onnxruntime==1.32.0
+pytest
+httpx==0.28.1

@@ -1,0 +1,4 @@
+# What CI needs to run every test: the service and monitoring packages plus these.
+-r requirements-monitor.txt
+pytest==9.2.0
+onnx==1.23.2

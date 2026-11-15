@@ -1,0 +1,6 @@
+# Drift monitoring (step 4). Kept in its own environment (.venv-monitor):
+# Evidently 0.7 does not yet work with pandas 3, which the training tools use.
+-r requirements-serve.txt
+evidently==0.7.23
+pandas<3
+httpx==0.28.1

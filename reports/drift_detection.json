@@ -1,0 +1,2291 @@
+{
+  "measured_at": "2026-11-14T20:32:35+00:00",
+  "window": 50,
+  "clean_images": 150,
+  "drifted_images": 150,
+  "defect_share_in_stream": 0.1,
+  "seeds": 5,
+  "columns": [
+    "brightness",
+    "contrast",
+    "sharpness",
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+  ],
+  "categories": {
+    "bottle": {
+      "threshold": 10.531133651733398,
+      "reference_draws": 300,
+      "reference_distinct_images": 125,
+      "good_parts_from_test_session": 0.087,
+      "stream_good_train": 100,
+      "stream_good_test": 10,
+      "stream_defect": 32,
+      "train_vs_test_columns_that_differ": [
+        "brightness"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          136.34,
+          137.67
+        ],
+        "contrast": [
+          92.72,
+          92.36
+        ],
+        "sharpness": [
+          124.89,
+          139.91
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.0,
+        "defects_missed": 0.015873015873015872,
+        "auroc": 1.0
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.015873015873015872,
+          "auroc": 1.0,
+          "delays": [
+            24,
+            21,
+            21,
+            12,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -14.156,
+            "contrast": -9.258,
+            "sharpness": -24.327
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.031746031746031744,
+          "auroc": 1.0,
+          "delays": [
+            14,
+            12,
+            15,
+            12,
+            11
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -41.544,
+            "contrast": -27.722,
+            "sharpness": -65.173
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 1.0,
+          "defects_missed": 0.0,
+          "auroc": 0.9555555555555556,
+          "delays": [
+            13,
+            9,
+            13,
+            12,
+            11
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -68.752,
+            "contrast": -46.326,
+            "sharpness": -95.975
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.015873015873015872,
+          "auroc": 1.0,
+          "delays": [
+            80,
+            107,
+            99,
+            54,
+            59
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.203,
+            "contrast": 0.064,
+            "sharpness": -33.313
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.015873015873015872,
+          "auroc": 1.0,
+          "delays": [
+            19,
+            21,
+            21,
+            20,
+            20
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.015,
+            "contrast": -0.205,
+            "sharpness": -79.678
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.0,
+          "auroc": 1.0,
+          "delays": [
+            14,
+            13,
+            16,
+            14,
+            13
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.008,
+            "contrast": -0.692,
+            "sharpness": -112.446
+          }
+        }
+      },
+      "example_report": "drift_report_bottle.html",
+      "example_report_drifted_columns": [
+        "brightness",
+        "sharpness",
+        "e3",
+        "e13"
+      ]
+    },
+    "cable": {
+      "threshold": 15.805041313171387,
+      "reference_draws": 300,
+      "reference_distinct_images": 139,
+      "good_parts_from_test_session": 0.206,
+      "stream_good_train": 100,
+      "stream_good_test": 29,
+      "stream_defect": 46,
+      "train_vs_test_columns_that_differ": [
+        "e3",
+        "e6",
+        "e7",
+        "e9"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          100.47,
+          101.9
+        ],
+        "contrast": [
+          49.09,
+          48.7
+        ],
+        "sharpness": [
+          463.87,
+          438.4
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.08620689655172414,
+        "defects_missed": 0.07608695652173914,
+        "auroc": 0.9812593703148427
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.05172413793103448,
+          "defects_missed": 0.07608695652173914,
+          "auroc": 0.9821964017991005,
+          "delays": [
+            31,
+            30,
+            28,
+            39,
+            33
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -10.56,
+            "contrast": -4.918,
+            "sharpness": -82.669
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.034482758620689655,
+          "defects_missed": 0.10869565217391304,
+          "auroc": 0.9833208395802099,
+          "delays": [
+            22,
+            14,
+            14,
+            13,
+            21
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -30.771,
+            "contrast": -14.748,
+            "sharpness": -221.772
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.034482758620689655,
+          "defects_missed": 0.09782608695652174,
+          "auroc": 0.9799475262368815,
+          "delays": [
+            16,
+            14,
+            12,
+            11,
+            14
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -50.784,
+            "contrast": -24.587,
+            "sharpness": -326.217
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.06896551724137931,
+          "defects_missed": 0.07608695652173914,
+          "auroc": 0.9786356821589206,
+          "delays": [
+            null,
+            71,
+            46,
+            null,
+            42
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.215,
+            "contrast": -0.197,
+            "sharpness": -89.968
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.25862068965517243,
+          "defects_missed": 0.05434782608695652,
+          "auroc": 0.9694527736131934,
+          "delays": [
+            28,
+            29,
+            17,
+            28,
+            22
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.005,
+            "contrast": -0.614,
+            "sharpness": -246.237
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.6551724137931034,
+          "defects_missed": 0.0,
+          "auroc": 0.938343328335832,
+          "delays": [
+            15,
+            17,
+            15,
+            15,
+            16
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.029,
+            "contrast": -1.765,
+            "sharpness": -387.165
+          }
+        }
+      }
+    },
+    "capsule": {
+      "threshold": 7.888763427734375,
+      "reference_draws": 300,
+      "reference_distinct_images": 128,
+      "good_parts_from_test_session": 0.095,
+      "stream_good_train": 100,
+      "stream_good_test": 12,
+      "stream_defect": 55,
+      "train_vs_test_columns_that_differ": [],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          171.95,
+          170.25
+        ],
+        "contrast": [
+          63.76,
+          63.27
+        ],
+        "sharpness": [
+          26.51,
+          26.49
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.0,
+        "defects_missed": 0.045871559633027525,
+        "auroc": 0.9880335061826886
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.05504587155963303,
+          "auroc": 0.9856402074192262,
+          "delays": [
+            24,
+            30,
+            19,
+            34,
+            36
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -17.641,
+            "contrast": -6.37,
+            "sharpness": -4.913
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.043478260869565216,
+          "defects_missed": 0.045871559633027525,
+          "auroc": 0.9792580773833267,
+          "delays": [
+            14,
+            15,
+            14,
+            15,
+            13
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -52.041,
+            "contrast": -19.065,
+            "sharpness": -13.26
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.782608695652174,
+          "defects_missed": 0.01834862385321101,
+          "auroc": 0.8907060231352215,
+          "delays": [
+            14,
+            15,
+            13,
+            15,
+            11
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -86.232,
+            "contrast": -31.778,
+            "sharpness": -19.523
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.08695652173913043,
+          "defects_missed": 0.07339449541284404,
+          "auroc": 0.9812524930195453,
+          "delays": [
+            47,
+            33,
+            40,
+            89,
+            50
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.26,
+            "contrast": -0.093,
+            "sharpness": -4.75
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.13043478260869565,
+          "defects_missed": 0.11009174311926606,
+          "auroc": 0.96888711607499,
+          "delays": [
+            18,
+            17,
+            15,
+            18,
+            18
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.005,
+            "contrast": -0.041,
+            "sharpness": -13.944
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.8695652173913043,
+          "defects_missed": 0.0,
+          "auroc": 0.8663741523733547,
+          "delays": [
+            15,
+            15,
+            13,
+            13,
+            11
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.004,
+            "contrast": -0.153,
+            "sharpness": -22.411
+          }
+        }
+      }
+    },
+    "carpet": {
+      "threshold": 8.606950759887695,
+      "reference_draws": 300,
+      "reference_distinct_images": 149,
+      "good_parts_from_test_session": 0.091,
+      "stream_good_train": 100,
+      "stream_good_test": 14,
+      "stream_defect": 45,
+      "train_vs_test_columns_that_differ": [
+        "brightness",
+        "e1",
+        "e3",
+        "e4",
+        "e5",
+        "e7",
+        "e8",
+        "e10",
+        "e12",
+        "e14",
+        "e15"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          90.45,
+          94.54
+        ],
+        "contrast": [
+          29.34,
+          29.6
+        ],
+        "sharpness": [
+          2047.43,
+          2079.62
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.17857142857142858,
+        "defects_missed": 0.02247191011235955,
+        "auroc": 0.9791332263242375
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.14285714285714285,
+          "defects_missed": 0.0449438202247191,
+          "auroc": 0.9803370786516854,
+          "delays": [
+            21,
+            21,
+            16,
+            19,
+            17
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 3,
+          "mean_shift": {
+            "brightness": -9.587,
+            "contrast": -2.934,
+            "sharpness": -385.691
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.07142857142857142,
+          "defects_missed": 0.0449438202247191,
+          "auroc": 0.9819422150882825,
+          "delays": [
+            14,
+            15,
+            15,
+            15,
+            12
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 3,
+          "mean_shift": {
+            "brightness": -27.863,
+            "contrast": -8.795,
+            "sharpness": -1034.504
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.10714285714285714,
+          "defects_missed": 0.056179775280898875,
+          "auroc": 0.9755216693418941,
+          "delays": [
+            11,
+            13,
+            13,
+            12,
+            8
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 3,
+          "mean_shift": {
+            "brightness": -45.939,
+            "contrast": -14.658,
+            "sharpness": -1521.29
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.17857142857142858,
+          "defects_missed": 0.02247191011235955,
+          "auroc": 0.9827447833065811,
+          "delays": [
+            21,
+            30,
+            22,
+            25,
+            29
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 3,
+          "mean_shift": {
+            "brightness": -0.481,
+            "contrast": -1.321,
+            "sharpness": -406.554
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.2857142857142857,
+          "defects_missed": 0.033707865168539325,
+          "auroc": 0.9779293739967897,
+          "delays": [
+            15,
+            15,
+            14,
+            14,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 3,
+          "mean_shift": {
+            "brightness": -0.001,
+            "contrast": -4.573,
+            "sharpness": -1099.104
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.9285714285714286,
+          "defects_missed": 0.0,
+          "auroc": 0.9811396468699838,
+          "delays": [
+            13,
+            11,
+            13,
+            11,
+            13
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 3,
+          "mean_shift": {
+            "brightness": 0.0,
+            "contrast": -12.224,
+            "sharpness": -1812.911
+          }
+        }
+      }
+    },
+    "grid": {
+      "threshold": 10.697953224182129,
+      "reference_draws": 300,
+      "reference_distinct_images": 144,
+      "good_parts_from_test_session": 0.074,
+      "stream_good_train": 100,
+      "stream_good_test": 11,
+      "stream_defect": 29,
+      "train_vs_test_columns_that_differ": [
+        "brightness",
+        "contrast"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          114.21,
+          104.12
+        ],
+        "contrast": [
+          38.38,
+          30.96
+        ],
+        "sharpness": [
+          645.08,
+          551.23
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.09523809523809523,
+        "defects_missed": 0.03508771929824561,
+        "auroc": 0.9573934837092732
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.09523809523809523,
+          "defects_missed": 0.07017543859649122,
+          "auroc": 0.9565580618212196,
+          "delays": [
+            78,
+            64,
+            45,
+            64,
+            110
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -11.806,
+            "contrast": -3.65,
+            "sharpness": -124.681
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.23809523809523808,
+          "defects_missed": 0.07017543859649122,
+          "auroc": 0.9482038429406849,
+          "delays": [
+            21,
+            29,
+            24,
+            22,
+            44
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -34.516,
+            "contrast": -10.95,
+            "sharpness": -334.714
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.5714285714285714,
+          "defects_missed": 0.03508771929824561,
+          "auroc": 0.8997493734335841,
+          "delays": [
+            18,
+            21,
+            18,
+            19,
+            33
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -57.024,
+            "contrast": -18.249,
+            "sharpness": -492.319
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.09523809523809523,
+          "defects_missed": 0.05263157894736842,
+          "auroc": 0.9440267335004177,
+          "delays": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.238,
+            "contrast": -0.272,
+            "sharpness": -121.21
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.2857142857142857,
+          "defects_missed": 0.03508771929824561,
+          "auroc": 0.9440267335004178,
+          "delays": [
+            49,
+            37,
+            48,
+            45,
+            45
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.027,
+            "contrast": -1.387,
+            "sharpness": -356.406
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 1.0,
+          "defects_missed": 0.0,
+          "auroc": 0.9064327485380117,
+          "delays": [
+            17,
+            19,
+            18,
+            15,
+            23
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.015,
+            "contrast": -3.991,
+            "sharpness": -583.348
+          }
+        }
+      }
+    },
+    "hazelnut": {
+      "threshold": 13.962851524353027,
+      "reference_draws": 300,
+      "reference_distinct_images": 170,
+      "good_parts_from_test_session": 0.093,
+      "stream_good_train": 100,
+      "stream_good_test": 20,
+      "stream_defect": 35,
+      "train_vs_test_columns_that_differ": [
+        "brightness",
+        "contrast",
+        "e5",
+        "e6"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          49.79,
+          54.5
+        ],
+        "contrast": [
+          24.22,
+          22.6
+        ],
+        "sharpness": [
+          32.29,
+          31.14
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.025,
+        "defects_missed": 0.0,
+        "auroc": 0.9996428571428572
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.025,
+          "defects_missed": 0.014285714285714285,
+          "auroc": 0.9996428571428572,
+          "delays": [
+            55,
+            null,
+            85,
+            40,
+            116
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -5.62,
+            "contrast": -2.425,
+            "sharpness": -8.069
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.014285714285714285,
+          "auroc": 1.0,
+          "delays": [
+            22,
+            36,
+            37,
+            24,
+            28
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -15.953,
+            "contrast": -7.297,
+            "sharpness": -21.783
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.02857142857142857,
+          "auroc": 0.9989285714285714,
+          "delays": [
+            15,
+            15,
+            23,
+            16,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -26.064,
+            "contrast": -12.178,
+            "sharpness": -32.105
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.025,
+          "defects_missed": 0.014285714285714285,
+          "auroc": 0.9996428571428572,
+          "delays": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.214,
+            "contrast": -0.103,
+            "sharpness": -9.469
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.1,
+          "defects_missed": 0.014285714285714285,
+          "auroc": 0.9967857142857142,
+          "delays": [
+            49,
+            76,
+            null,
+            123,
+            81
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.021,
+            "contrast": -0.113,
+            "sharpness": -25.485
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.175,
+          "defects_missed": 0.014285714285714285,
+          "auroc": 0.9892857142857143,
+          "delays": [
+            26,
+            32,
+            28,
+            29,
+            34
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.034,
+            "contrast": -0.272,
+            "sharpness": -38.797
+          }
+        }
+      }
+    },
+    "leather": {
+      "threshold": 9.315969467163086,
+      "reference_draws": 300,
+      "reference_distinct_images": 136,
+      "good_parts_from_test_session": 0.116,
+      "stream_good_train": 100,
+      "stream_good_test": 16,
+      "stream_defect": 46,
+      "train_vs_test_columns_that_differ": [
+        "brightness",
+        "contrast",
+        "sharpness",
+        "e0",
+        "e1",
+        "e3",
+        "e5",
+        "e9",
+        "e15"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          75.48,
+          86.86
+        ],
+        "contrast": [
+          8.25,
+          10.37
+        ],
+        "sharpness": [
+          228.28,
+          441.41
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.0,
+        "defects_missed": 0.021739130434782608,
+        "auroc": 0.9976222826086957
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.021739130434782608,
+          "auroc": 0.9989809782608696,
+          "delays": [
+            34,
+            33,
+            23,
+            31,
+            43
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -8.465,
+            "contrast": -0.962,
+            "sharpness": -61.079
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.03260869565217391,
+          "auroc": 0.998641304347826,
+          "delays": [
+            16,
+            10,
+            15,
+            17,
+            13
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -24.497,
+            "contrast": -2.884,
+            "sharpness": -163.996
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.043478260869565216,
+          "auroc": 0.9993206521739131,
+          "delays": [
+            13,
+            10,
+            12,
+            9,
+            11
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -40.328,
+            "contrast": -4.806,
+            "sharpness": -241.201
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.03260869565217391,
+          "auroc": 1.0,
+          "delays": [
+            31,
+            29,
+            30,
+            41,
+            22
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.402,
+            "contrast": -0.421,
+            "sharpness": -86.975
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.0,
+          "auroc": 1.0,
+          "delays": [
+            14,
+            13,
+            15,
+            14,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.001,
+            "contrast": -1.245,
+            "sharpness": -225.402
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.96875,
+          "defects_missed": 0.0,
+          "auroc": 1.0,
+          "delays": [
+            13,
+            11,
+            14,
+            14,
+            13
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.022,
+            "contrast": -2.45,
+            "sharpness": -309.974
+          }
+        }
+      }
+    },
+    "metal_nut": {
+      "threshold": 13.418951988220215,
+      "reference_draws": 300,
+      "reference_distinct_images": 132,
+      "good_parts_from_test_session": 0.091,
+      "stream_good_train": 100,
+      "stream_good_test": 11,
+      "stream_defect": 47,
+      "train_vs_test_columns_that_differ": [],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          58.66,
+          60.61
+        ],
+        "contrast": [
+          42.85,
+          43.97
+        ],
+        "sharpness": [
+          182.05,
+          193.99
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.045454545454545456,
+        "defects_missed": 0.010752688172043012,
+        "auroc": 0.9970674486803519
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.045454545454545456,
+          "defects_missed": 0.021505376344086023,
+          "auroc": 0.998533724340176,
+          "delays": [
+            113,
+            61,
+            43,
+            47,
+            76
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -6.444,
+            "contrast": -4.163,
+            "sharpness": -30.669
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.045454545454545456,
+          "defects_missed": 0.010752688172043012,
+          "auroc": 0.9975562072336266,
+          "delays": [
+            24,
+            39,
+            16,
+            20,
+            28
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -18.137,
+            "contrast": -12.737,
+            "sharpness": -82.427
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.045454545454545456,
+          "defects_missed": 0.010752688172043012,
+          "auroc": 0.993646138807429,
+          "delays": [
+            21,
+            18,
+            16,
+            17,
+            26
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -29.827,
+            "contrast": -21.132,
+            "sharpness": -121.221
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.09090909090909091,
+          "defects_missed": 0.010752688172043012,
+          "auroc": 0.9990224828934506,
+          "delays": [
+            102,
+            79,
+            47,
+            46,
+            70
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.284,
+            "contrast": -0.324,
+            "sharpness": -53.874
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.22727272727272727,
+          "defects_missed": 0.010752688172043012,
+          "auroc": 0.9965786901270772,
+          "delays": [
+            22,
+            22,
+            20,
+            20,
+            22
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.007,
+            "contrast": -0.647,
+            "sharpness": -117.343
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.9090909090909091,
+          "defects_missed": 0.0,
+          "auroc": 0.9740957966764419,
+          "delays": [
+            14,
+            13,
+            14,
+            13,
+            14
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.01,
+            "contrast": -1.706,
+            "sharpness": -152.652
+          }
+        }
+      }
+    },
+    "pill": {
+      "threshold": 10.172800064086914,
+      "reference_draws": 300,
+      "reference_distinct_images": 146,
+      "good_parts_from_test_session": 0.089,
+      "stream_good_train": 100,
+      "stream_good_test": 13,
+      "stream_defect": 71,
+      "train_vs_test_columns_that_differ": [],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          77.9,
+          77.9
+        ],
+        "contrast": [
+          76.9,
+          76.88
+        ],
+        "sharpness": [
+          36.38,
+          36.57
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.4230769230769231,
+        "defects_missed": 0.028368794326241134,
+        "auroc": 0.9399890889252592
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.4230769230769231,
+          "defects_missed": 0.0425531914893617,
+          "auroc": 0.9320785597381342,
+          "delays": [
+            39,
+            30,
+            39,
+            19,
+            65
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -8.31,
+            "contrast": -7.636,
+            "sharpness": -6.904
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.38461538461538464,
+          "defects_missed": 0.05673758865248227,
+          "auroc": 0.9258046917621386,
+          "delays": [
+            14,
+            15,
+            13,
+            17,
+            22
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -23.988,
+            "contrast": -22.947,
+            "sharpness": -18.943
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.38461538461538464,
+          "defects_missed": 0.0425531914893617,
+          "auroc": 0.9304418985270049,
+          "delays": [
+            12,
+            15,
+            13,
+            15,
+            14
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -39.453,
+            "contrast": -38.266,
+            "sharpness": -27.884
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.4230769230769231,
+          "defects_missed": 0.028368794326241134,
+          "auroc": 0.9350791052918713,
+          "delays": [
+            null,
+            null,
+            113,
+            46,
+            null
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.131,
+            "contrast": -0.12,
+            "sharpness": -6.932
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.5,
+          "defects_missed": 0.0425531914893617,
+          "auroc": 0.9108019639934533,
+          "delays": [
+            22,
+            15,
+            20,
+            17,
+            19
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.001,
+            "contrast": -0.123,
+            "sharpness": -19.545
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.8461538461538461,
+          "defects_missed": 0.0070921985815602835,
+          "auroc": 0.8510638297872342,
+          "delays": [
+            13,
+            15,
+            13,
+            16,
+            14
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.001,
+            "contrast": -0.432,
+            "sharpness": -31.804
+          }
+        }
+      }
+    },
+    "screw": {
+      "threshold": 10.990218162536621,
+      "reference_draws": 300,
+      "reference_distinct_images": 164,
+      "good_parts_from_test_session": 0.114,
+      "stream_good_train": 100,
+      "stream_good_test": 21,
+      "stream_defect": 60,
+      "train_vs_test_columns_that_differ": [
+        "brightness",
+        "contrast",
+        "sharpness",
+        "e11",
+        "e13",
+        "e14"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          184.2,
+          170.38
+        ],
+        "contrast": [
+          33.41,
+          30.36
+        ],
+        "sharpness": [
+          52.74,
+          44.99
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.07317073170731707,
+        "defects_missed": 0.058823529411764705,
+        "auroc": 0.9719204755072761
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.0975609756097561,
+          "defects_missed": 0.10084033613445378,
+          "auroc": 0.9692559950809592,
+          "delays": [
+            25,
+            28,
+            33,
+            24,
+            22
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -18.761,
+            "contrast": -3.309,
+            "sharpness": -9.658
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.0975609756097561,
+          "defects_missed": 0.09243697478991597,
+          "auroc": 0.9610575937692151,
+          "delays": [
+            14,
+            15,
+            14,
+            15,
+            16
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -55.391,
+            "contrast": -9.933,
+            "sharpness": -26.094
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.3170731707317073,
+          "defects_missed": 0.04201680672268908,
+          "auroc": 0.959007993441279,
+          "delays": [
+            14,
+            15,
+            14,
+            15,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -91.814,
+            "contrast": -16.554,
+            "sharpness": -38.427
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.0975609756097561,
+          "defects_missed": 0.09243697478991597,
+          "auroc": 0.9676163148186104,
+          "delays": [
+            null,
+            null,
+            null,
+            null,
+            58
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.227,
+            "contrast": 0.008,
+            "sharpness": -10.455
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.36585365853658536,
+          "defects_missed": 0.04201680672268908,
+          "auroc": 0.9147366263578602,
+          "delays": [
+            28,
+            24,
+            31,
+            29,
+            32
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.025,
+            "contrast": -0.111,
+            "sharpness": -28.671
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 1.0,
+          "defects_missed": 0.0,
+          "auroc": 0.6214388194302112,
+          "delays": [
+            17,
+            13,
+            15,
+            14,
+            14
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.055,
+            "contrast": -0.327,
+            "sharpness": -45.58
+          }
+        }
+      }
+    },
+    "tile": {
+      "threshold": 11.207672119140625,
+      "reference_draws": 300,
+      "reference_distinct_images": 134,
+      "good_parts_from_test_session": 0.125,
+      "stream_good_train": 100,
+      "stream_good_test": 17,
+      "stream_defect": 42,
+      "train_vs_test_columns_that_differ": [
+        "contrast",
+        "sharpness",
+        "e1",
+        "e6"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          118.39,
+          114.92
+        ],
+        "contrast": [
+          30.66,
+          28.85
+        ],
+        "sharpness": [
+          331.01,
+          290.48
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.06060606060606061,
+        "defects_missed": 0.03571428571428571,
+        "auroc": 0.9902597402597404
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.047619047619047616,
+          "auroc": 0.9938672438672438,
+          "delays": [
+            35,
+            39,
+            23,
+            27,
+            39
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -11.962,
+            "contrast": -3.004,
+            "sharpness": -61.432
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.05952380952380952,
+          "auroc": 0.9963924963924964,
+          "delays": [
+            20,
+            15,
+            15,
+            14,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -34.986,
+            "contrast": -9.014,
+            "sharpness": -164.963
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.023809523809523808,
+          "auroc": 0.9963924963924964,
+          "delays": [
+            14,
+            15,
+            14,
+            14,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -57.81,
+            "contrast": -15.022,
+            "sharpness": -242.613
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.09090909090909091,
+          "defects_missed": 0.03571428571428571,
+          "auroc": 0.9870129870129871,
+          "delays": [
+            35,
+            31,
+            29,
+            40,
+            45
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.446,
+            "contrast": -0.405,
+            "sharpness": -77.285
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.18181818181818182,
+          "defects_missed": 0.03571428571428571,
+          "auroc": 0.9751082251082251,
+          "delays": [
+            14,
+            15,
+            18,
+            16,
+            23
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.001,
+            "contrast": -1.559,
+            "sharpness": -194.081
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.7272727272727273,
+          "defects_missed": 0.0,
+          "auroc": 0.948051948051948,
+          "delays": [
+            13,
+            14,
+            14,
+            12,
+            14
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.002,
+            "contrast": -4.462,
+            "sharpness": -285.654
+          }
+        }
+      }
+    },
+    "toothbrush": {
+      "threshold": 11.593480110168457,
+      "reference_draws": 300,
+      "reference_distinct_images": 48,
+      "good_parts_from_test_session": 0.167,
+      "stream_good_train": 30,
+      "stream_good_test": 6,
+      "stream_defect": 15,
+      "train_vs_test_columns_that_differ": [],
+      "train_half_vs_half_columns_that_differ": [
+        "e4"
+      ],
+      "train_vs_test_means": {
+        "brightness": [
+          48.57,
+          48.64
+        ],
+        "contrast": [
+          54.43,
+          54.21
+        ],
+        "sharpness": [
+          132.21,
+          137.75
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.4166666666666667,
+        "defects_missed": 0.0,
+        "auroc": 0.8805555555555555
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.4166666666666667,
+          "defects_missed": 0.03333333333333333,
+          "auroc": 0.8805555555555555,
+          "delays": [
+            1,
+            1,
+            22,
+            24,
+            4
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 92,
+          "mean_shift": {
+            "brightness": -5.279,
+            "contrast": -5.399,
+            "sharpness": -25.374
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.3333333333333333,
+          "defects_missed": 0.0,
+          "auroc": 0.9222222222222223,
+          "delays": [
+            1,
+            1,
+            11,
+            9,
+            4
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 92,
+          "mean_shift": {
+            "brightness": -14.999,
+            "contrast": -16.156,
+            "sharpness": -68.523
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.3333333333333333,
+          "defects_missed": 0.0,
+          "auroc": 0.9527777777777778,
+          "delays": [
+            1,
+            1,
+            6,
+            6,
+            2
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 92,
+          "mean_shift": {
+            "brightness": -24.419,
+            "contrast": -26.973,
+            "sharpness": -100.746
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.3333333333333333,
+          "defects_missed": 0.03333333333333333,
+          "auroc": 0.8805555555555556,
+          "delays": [
+            1,
+            1,
+            6,
+            35,
+            4
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 92,
+          "mean_shift": {
+            "brightness": -0.111,
+            "contrast": -0.166,
+            "sharpness": -29.083
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.4166666666666667,
+          "defects_missed": 0.0,
+          "auroc": 0.8916666666666666,
+          "delays": [
+            1,
+            1,
+            6,
+            10,
+            2
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 92,
+          "mean_shift": {
+            "brightness": 0.016,
+            "contrast": -0.228,
+            "sharpness": -78.479
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 1.0,
+          "defects_missed": 0.0,
+          "auroc": 0.8694444444444446,
+          "delays": [
+            1,
+            1,
+            3,
+            5,
+            2
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 92,
+          "mean_shift": {
+            "brightness": 0.012,
+            "contrast": -0.678,
+            "sharpness": -118.584
+          }
+        }
+      }
+    },
+    "transistor": {
+      "threshold": 14.105354309082031,
+      "reference_draws": 300,
+      "reference_distinct_images": 134,
+      "good_parts_from_test_session": 0.22,
+      "stream_good_train": 100,
+      "stream_good_test": 30,
+      "stream_defect": 20,
+      "train_vs_test_columns_that_differ": [
+        "contrast",
+        "e1"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          77.88,
+          78.24
+        ],
+        "contrast": [
+          39.73,
+          40.46
+        ],
+        "sharpness": [
+          178.24,
+          176.88
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.016666666666666666,
+        "defects_missed": 0.075,
+        "auroc": 0.99
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.016666666666666666,
+          "defects_missed": 0.225,
+          "auroc": 0.9920833333333334,
+          "delays": [
+            17,
+            22,
+            19,
+            20,
+            19
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -8.311,
+            "contrast": -4.02,
+            "sharpness": -33.405
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.225,
+          "auroc": 0.9916666666666667,
+          "delays": [
+            14,
+            15,
+            15,
+            16,
+            13
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -24.035,
+            "contrast": -12.059,
+            "sharpness": -89.656
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.0,
+          "defects_missed": 0.3,
+          "auroc": 0.9895833333333334,
+          "delays": [
+            10,
+            15,
+            15,
+            15,
+            12
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -39.552,
+            "contrast": -20.103,
+            "sharpness": -131.893
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.016666666666666666,
+          "defects_missed": 0.125,
+          "auroc": 0.9920833333333333,
+          "delays": [
+            59,
+            45,
+            34,
+            29,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.217,
+            "contrast": -0.155,
+            "sharpness": -34.141
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.016666666666666666,
+          "defects_missed": 0.15,
+          "auroc": 0.9924999999999999,
+          "delays": [
+            13,
+            16,
+            27,
+            15,
+            11
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.011,
+            "contrast": -0.395,
+            "sharpness": -94.553
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.1,
+          "defects_missed": 0.125,
+          "auroc": 0.9716666666666667,
+          "delays": [
+            10,
+            13,
+            15,
+            14,
+            11
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.031,
+            "contrast": -1.205,
+            "sharpness": -152.392
+          }
+        }
+      }
+    },
+    "wood": {
+      "threshold": 10.577513694763184,
+      "reference_draws": 300,
+      "reference_distinct_images": 133,
+      "good_parts_from_test_session": 0.071,
+      "stream_good_train": 100,
+      "stream_good_test": 10,
+      "stream_defect": 30,
+      "train_vs_test_columns_that_differ": [
+        "contrast",
+        "e0",
+        "e3",
+        "e12",
+        "e13"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          132.65,
+          131.15
+        ],
+        "contrast": [
+          14.1,
+          11.57
+        ],
+        "sharpness": [
+          195.01,
+          133.81
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.2631578947368421,
+        "defects_missed": 0.016666666666666666,
+        "auroc": 0.9833333333333334
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.21052631578947367,
+          "defects_missed": 0.016666666666666666,
+          "auroc": 0.981578947368421,
+          "delays": [
+            38,
+            45,
+            65,
+            48,
+            67
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -13.736,
+            "contrast": -1.442,
+            "sharpness": -39.156
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.21052631578947367,
+          "defects_missed": 0.016666666666666666,
+          "auroc": 0.9780701754385965,
+          "delays": [
+            18,
+            24,
+            19,
+            26,
+            21
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -40.307,
+            "contrast": -4.325,
+            "sharpness": -105.143
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.21052631578947367,
+          "defects_missed": 0.016666666666666666,
+          "auroc": 0.9789473684210526,
+          "delays": [
+            16,
+            16,
+            19,
+            16,
+            17
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -66.679,
+            "contrast": -7.208,
+            "sharpness": -154.633
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.2631578947368421,
+          "defects_missed": 0.016666666666666666,
+          "auroc": 0.9824561403508771,
+          "delays": [
+            null,
+            67,
+            35,
+            118,
+            74
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.422,
+            "contrast": -0.259,
+            "sharpness": -49.75
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.3684210526315789,
+          "defects_missed": 0.016666666666666666,
+          "auroc": 0.9763157894736842,
+          "delays": [
+            42,
+            46,
+            23,
+            83,
+            45
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.002,
+            "contrast": -0.825,
+            "sharpness": -127.995
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 0.7368421052631579,
+          "defects_missed": 0.0,
+          "auroc": 0.968421052631579,
+          "delays": [
+            26,
+            26,
+            19,
+            25,
+            22
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.03,
+            "contrast": -1.975,
+            "sharpness": -190.216
+          }
+        }
+      }
+    },
+    "zipper": {
+      "threshold": 8.42711353302002,
+      "reference_draws": 300,
+      "reference_distinct_images": 141,
+      "good_parts_from_test_session": 0.118,
+      "stream_good_train": 100,
+      "stream_good_test": 16,
+      "stream_defect": 60,
+      "train_vs_test_columns_that_differ": [
+        "e1",
+        "e13"
+      ],
+      "train_half_vs_half_columns_that_differ": [],
+      "train_vs_test_means": {
+        "brightness": [
+          102.31,
+          101.62
+        ],
+        "contrast": [
+          81.72,
+          82.37
+        ],
+        "sharpness": [
+          468.16,
+          451.21
+        ]
+      },
+      "clean": {
+        "good_parts_failed": 0.15625,
+        "defects_missed": 0.03361344537815126,
+        "auroc": 0.9501050420168067
+      },
+      "conditions": {
+        "darken to 90%": {
+          "good_parts_failed": 0.125,
+          "defects_missed": 0.03361344537815126,
+          "auroc": 0.9524684873949579,
+          "delays": [
+            24,
+            21,
+            21,
+            20,
+            14
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -10.643,
+            "contrast": -8.197,
+            "sharpness": -84.682
+          }
+        },
+        "darken to 70%": {
+          "good_parts_failed": 0.1875,
+          "defects_missed": 0.025210084033613446,
+          "auroc": 0.9477415966386554,
+          "delays": [
+            15,
+            14,
+            15,
+            15,
+            10
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -31.007,
+            "contrast": -24.55,
+            "sharpness": -227.284
+          }
+        },
+        "darken to 50%": {
+          "good_parts_failed": 0.90625,
+          "defects_missed": 0.0,
+          "auroc": 0.9317226890756303,
+          "delays": [
+            13,
+            13,
+            12,
+            14,
+            8
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -51.215,
+            "contrast": -40.984,
+            "sharpness": -334.354
+          }
+        },
+        "blur, radius 1 px": {
+          "good_parts_failed": 0.125,
+          "defects_missed": 0.03361344537815126,
+          "auroc": 0.9459033613445378,
+          "delays": [
+            72,
+            113,
+            69,
+            49,
+            35
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": -0.349,
+            "contrast": 0.071,
+            "sharpness": -100.836
+          }
+        },
+        "blur, radius 2 px": {
+          "good_parts_failed": 0.25,
+          "defects_missed": 0.025210084033613446,
+          "auroc": 0.9469537815126051,
+          "delays": [
+            19,
+            16,
+            22,
+            22,
+            23
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.003,
+            "contrast": -0.366,
+            "sharpness": -266.353
+          }
+        },
+        "blur, radius 4 px": {
+          "good_parts_failed": 1.0,
+          "defects_missed": 0.0,
+          "auroc": 0.8918067226890757,
+          "delays": [
+            15,
+            13,
+            12,
+            14,
+            15
+          ],
+          "clean_windows": 505,
+          "clean_alarms": 0,
+          "mean_shift": {
+            "brightness": 0.013,
+            "contrast": -0.944,
+            "sharpness": -406.947
+          }
+        }
+      }
+    }
+  }
+}
